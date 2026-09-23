@@ -57,6 +57,7 @@
 
 .work-all {
   margin-top: 2rem;
+  transform: translateY(2rem);
 }
 
 .work-archive > p:first-child {

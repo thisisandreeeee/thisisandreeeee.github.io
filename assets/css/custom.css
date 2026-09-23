@@ -3,7 +3,7 @@
   top: 0;
   left: 1rem;
   z-index: 100;
-  padding: .75rem 1rem;
+  padding: 0.75rem 1rem;
   background: #fff;
   color: #111;
   transform: translateY(-110%);
@@ -13,9 +13,8 @@
   transform: translateY(0);
 }
 
-a,
-a:active {
-  color: #007a8a;
+.markdown a:hover {
+  color: #000;
 }
 
 .top-pad > a {
@@ -24,11 +23,4 @@ a:active {
   min-height: 44px;
   align-items: center;
   justify-content: center;
-}
-
-@media (prefers-color-scheme: dark) {
-  a,
-  a:active {
-    color: #00b8d4;
-  }
 }
