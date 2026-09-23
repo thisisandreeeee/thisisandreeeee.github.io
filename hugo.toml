@@ -1,5 +1,5 @@
 baseURL = "https://thisisandreeeee.github.io/"
-title = "Andre Tan — Welcome To My World"
+title = "Andre Tan — Applied AI & Data Science Leader"
 theme = "introduction"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
