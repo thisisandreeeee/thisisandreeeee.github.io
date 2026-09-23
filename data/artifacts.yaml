@@ -1,0 +1,141 @@
+- id: jev-benchmarks
+  title: Jev Benchmarks
+  type: Project
+  date: "2026-09-19"
+  summary: Reproducible comparisons of Jev against supervised and zero-shot baselines across five NLP benchmarks.
+  url: https://github.com/thisisandreeeee/jev-benchmarks
+  featured: true
+  feature_order: 2
+  related:
+    - label: Read the article
+      url: https://medium.com/data-science-collective/how-close-does-jev-get-to-task-specific-models-ab56905a4e21
+
+- id: sokoban-solver
+  title: Sokoban Solver
+  type: Project
+  date: "2026-09-18"
+  summary: A push-based breadth-first search solver and visualizer for Sokoban puzzles.
+  url: https://github.com/thisisandreeeee/sokoban-solver
+
+- id: jev-task-specific-models
+  title: How close does Jev get to task-specific models?
+  type: Writing
+  date: "2026-09-22"
+  summary: An empirical comparison of general-purpose zero-shot inference with task-specific supervised models.
+  url: https://medium.com/data-science-collective/how-close-does-jev-get-to-task-specific-models-ab56905a4e21
+
+- id: making-llms-simpler
+  title: "Making LLMs Simpler: From SFT to GRPO"
+  type: Writing
+  date: "2026-09-15"
+  summary: Extending a supervised fine-tuning experiment with reinforcement learning for simpler technical answers.
+  url: https://medium.com/towards-artificial-intelligence/making-llms-simpler-from-sft-to-grpo-2a48058f920b
+
+- id: sql-agent
+  title: SQL Agent
+  type: Project
+  date: "2026-08-30"
+  summary: A minimal LangGraph ReAct agent evaluated on 250 natural-language SQL questions.
+  url: https://github.com/thisisandreeeee/sql-agent
+
+- id: hermes-eleven-weeks
+  title: What I Learned from Running Hermes for 11 Weeks
+  type: Writing
+  date: "2026-08-29"
+  summary: Lessons from using a personal AI agent for learning, household workflows, and small everyday problems.
+  url: https://medium.com/@andrewrites/what-i-learned-from-running-hermes-for-11-weeks-ea1afa3244d1
+
+- id: llms-in-10-words
+  title: LLMs in 10 Words
+  type: Project
+  date: "2026-08-27"
+  summary: Complex language-model concepts explained in ten words or fewer.
+  url: https://github.com/thisisandreeeee/llms-in-10-words
+
+- id: get-llms-to-say-more-with-less
+  title: Get LLMs to Say More with Less
+  type: Writing
+  date: "2026-08-22"
+  summary: Fine-tuning a small language model to produce answers that are both correct and simple.
+  url: https://medium.com/data-science-collective/get-llms-to-say-more-with-less-41636ce31268
+
+- id: simple-llm
+  title: Simple LLM
+  type: Project
+  date: "2026-08-08"
+  summary: An experiment in post-training Qwen3.5-4B to write clear, correct technical answers in simple English.
+  url: https://github.com/thisisandreeeee/simple-llm
+  featured: true
+  feature_order: 1
+  related:
+    - label: Read the SFT article
+      url: https://medium.com/data-science-collective/get-llms-to-say-more-with-less-41636ce31268
+    - label: Read the GRPO article
+      url: https://medium.com/towards-artificial-intelligence/making-llms-simpler-from-sft-to-grpo-2a48058f920b
+    - label: Models and dataset
+      url: https://huggingface.co/thisisandreeeee
+
+- id: llm-koans
+  title: LLM Koans
+  type: Project
+  date: "2026-06-27"
+  summary: Small, focused PyTorch exercises for learning how large language models work.
+  url: https://github.com/thisisandreeeee/llm-koans
+
+- id: ai-wiki
+  title: AI Wiki
+  type: Project
+  date: "2026-06-21"
+  summary: A growing, linked knowledge base built from AI newsletters and personal research.
+  url: https://github.com/thisisandreeeee/ai-wiki
+  featured: true
+  feature_order: 3
+  related:
+    - label: Explore LLM Koans
+      url: https://github.com/thisisandreeeee/llm-koans
+    - label: Read the Hermes story
+      url: https://medium.com/@andrewrites/what-i-learned-from-running-hermes-for-11-weeks-ea1afa3244d1
+
+- id: unicorn-data-science
+  title: Unicorn Data Science
+  type: Project
+  date: "2020-01-28"
+  summary: The practical data-science reading list I wish I had from day one.
+  url: https://github.com/thisisandreeeee/unicorn-data-science
+
+- id: tfx-tensorflow
+  title: End-to-end Machine Learning with TFX on TensorFlow 2.x
+  type: Writing
+  date: "2020-02-01"
+  summary: A walkthrough of building an end-to-end production machine-learning pipeline with TensorFlow Extended.
+  url: https://medium.com/data-science/end-to-end-machine-learning-with-tfx-on-tensorflow-2-x-6eda2fb5fe37
+
+- id: deep-learning-competition
+  title: What Deep Learning Taught Me About Competition
+  type: Writing
+  date: "2017-10-28"
+  summary: Using agent-based models and GANs to examine how competition and cooperation can coexist.
+  url: https://medium.com/@andrewrites/what-deep-learning-taught-me-about-competition-5157e9eb464
+
+- id: hackathons-startups
+  title: What Hackathons Can Teach Us About Running a Startup
+  type: Writing
+  date: "2017-01-25"
+  summary: What rapid prototyping and continuous feedback at hackathons reveal about building products.
+  url: https://medium.com/nus-silicon-valley/what-hackathons-can-teach-us-about-running-a-startup-1fb9b4dad69a
+
+- id: breeze
+  title: Breeze
+  type: Project
+  date: "2016-11-15"
+  summary: A reproducible setup for carrying a personal development environment across Linux and macOS.
+  url: https://github.com/thisisandreeeee/breeze
+
+- id: dmv-stalker
+  title: DMV Stalker
+  type: Project
+  date: "2016-08-31"
+  summary: A bot that monitors scarce driving-test appointments and sends timely Slack notifications.
+  url: https://github.com/thisisandreeeee/dmv-stalker
+  featured: true
+  feature_order: 4

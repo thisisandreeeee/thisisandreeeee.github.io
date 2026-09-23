@@ -1,0 +1,21 @@
+{{ define "main" }}
+<div class="container markdown top-pad work-archive">
+  {{ .Content }}
+  {{ $year := "" }}
+  {{ range sort hugo.Data.artifacts "date" "desc" }}
+    {{ $itemYear := time.Format "2006" (time.AsTime .date) }}
+    {{ if ne $itemYear $year }}
+      {{ $year = $itemYear }}
+      <h2>{{ $year }}</h2>
+    {{ end }}
+    <article class="work-row">
+      <time datetime="{{ .date }}">{{ time.Format "2 Jan" (time.AsTime .date) }}</time>
+      <span class="work-type">{{ .type }}</span>
+      <div>
+        <h3><a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .title }}</a></h3>
+        <p>{{ .summary }}</p>
+      </div>
+    </article>
+  {{ end }}
+</div>
+{{ end }}
