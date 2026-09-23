@@ -39,7 +39,7 @@
   type: Collection
   summary: Small experiments and useful automations built to explore an idea or solve an immediate problem.
   links:
-    - label: Running Hermes for 11 weeks
+    - label: Self-Hosted Hermes
       url: https://medium.com/@andrewrites/what-i-learned-from-running-hermes-for-11-weeks-ea1afa3244d1
     - label: Sokoban Solver
       url: https://github.com/thisisandreeeee/sokoban-solver
