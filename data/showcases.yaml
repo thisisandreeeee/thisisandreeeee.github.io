@@ -2,7 +2,6 @@
   type: Project
   date: "2026-08-08"
   summary: An experiment in post-training Qwen3.5-4B to write clear, correct technical answers in simple English.
-  url: https://github.com/thisisandreeeee/simple-llm
   links:
     - label: GitHub repository
       url: https://github.com/thisisandreeeee/simple-llm
@@ -17,7 +16,6 @@
   type: Project
   date: "2026-09-19"
   summary: Reproducible comparisons of Jev against supervised and zero-shot baselines across five NLP benchmarks.
-  url: https://github.com/thisisandreeeee/jev-benchmarks
   links:
     - label: GitHub repository
       url: https://github.com/thisisandreeeee/jev-benchmarks
