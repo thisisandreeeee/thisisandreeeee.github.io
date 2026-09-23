@@ -52,6 +52,13 @@
   summary: Complex language-model concepts explained in ten words or fewer.
   url: https://github.com/thisisandreeeee/llms-in-10-words
 
+- id: gpu-chip-cheat-sheet
+  title: GPU Chip Cheat Sheet
+  type: Gist
+  date: "2026-08-27"
+  summary: A quick guide to decoding GPU names and comparing the specifications that matter for a workload.
+  url: https://gist.github.com/thisisandreeeee/9507528487a45dad1c895491816ddf36
+
 - id: get-llms-to-say-more-with-less
   title: Get LLMs to Say More with Less
   type: Writing
@@ -109,6 +116,13 @@
   date: "2020-02-01"
   summary: A walkthrough of building an end-to-end production machine-learning pipeline with TensorFlow Extended.
   url: https://medium.com/data-science/end-to-end-machine-learning-with-tfx-on-tensorflow-2-x-6eda2fb5fe37
+
+- id: user-manual
+  title: Andre's User Manual
+  type: Gist
+  date: "2019-08-05"
+  summary: How I think, collaborate, communicate, and what I value when working with a team.
+  url: https://gist.github.com/thisisandreeeee/3c0808ebbce187d6f483a1aba1657cfc
 
 - id: deep-learning-competition
   title: What Deep Learning Taught Me About Competition

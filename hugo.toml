@@ -33,29 +33,19 @@ disableKinds = ["taxonomy", "term"]
   weight = 20
 
 [[menus.main]]
-  name = "How I work"
-  url = "/#work"
+  name = "Selected work"
+  url = "/#selected-work"
   weight = 30
 
 [[menus.main]]
-  name = "Selected work"
-  url = "/#selected-work"
+  name = "Archive"
+  url = "/archive/"
   weight = 40
-
-[[menus.main]]
-  name = "All work"
-  url = "/work/"
-  weight = 50
-
-[[menus.main]]
-  name = "Testimonials"
-  url = "/#testimonials"
-  weight = 60
 
 [[menus.main]]
   name = "Contact"
   url = "/#contact"
-  weight = 70
+  weight = 50
 
   [[params.social]]
     url = "https://drive.google.com/file/d/1aIQzLV9QAXNxKWZ58G13cDXesGFpwSGZ/view?usp=sharing"
