@@ -1,0 +1,61 @@
+baseURL = "https://thisisandreeeee.github.io/"
+title = "Andre Tan"
+theme = "introduction"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[outputs]
+  home = ["HTML"]
+
+[params]
+  description = "Data scientist working at the intersection of machine learning, software engineering, and economics."
+  themeStyle = "auto"
+  showMenu = true
+  showRSSButton = false
+  fadeIn = true
+  footerText = "© Andre Tan"
+
+  [params.home]
+    introHeight = "fullheight"
+    localTime = false
+
+  [[params.social]]
+    url = "https://drive.google.com/file/d/1_SLSMEpS9F8JfJLhEcXJnF3mXHwHw4os/view?usp=sharing"
+    icon = "download"
+    icon_pack = "fas"
+    label = "Resume"
+    html_attributes = "target=\"_blank\" rel=\"noopener noreferrer\""
+
+  [[params.social]]
+    url = "https://www.linkedin.com/in/andre-tan"
+    icon = "linkedin-in"
+    icon_pack = "fab"
+    label = "LinkedIn"
+    html_attributes = "target=\"_blank\" rel=\"noopener noreferrer\""
+
+  [[params.social]]
+    url = "https://github.com/thisisandreeeee"
+    icon = "github"
+    icon_pack = "fab"
+    label = "GitHub"
+    html_attributes = "target=\"_blank\" rel=\"noopener noreferrer\""
+
+  [[params.social]]
+    url = "https://medium.com/@andrewrites"
+    icon = "medium"
+    icon_pack = "fab"
+    label = "Medium"
+    html_attributes = "target=\"_blank\" rel=\"noopener noreferrer\""
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = false
+
+[languages]
+  [languages.en]
+    label = "English"
+    locale = "en-SG"
+    contentDir = "content"
+    weight = 1
+    title = "Andre Tan"
