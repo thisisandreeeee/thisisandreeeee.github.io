@@ -1,0 +1,16 @@
+{
+  "name": "thisisandreeeee.github.io",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "hugo server --disableFastRender --cacheDir \"$PWD/.hugo_cache\"",
+    "build": "hugo --gc --minify --cacheDir \"$PWD/.hugo_cache\""
+  },
+  "devDependencies": {
+    "autoprefixer": "10.5.5",
+    "postcss": "8.5.28",
+    "postcss-cli": "12.0.0"
+  }
+}

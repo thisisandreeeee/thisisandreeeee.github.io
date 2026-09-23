@@ -1,2 +1,6 @@
+/public/
+/resources/_gen/
+/.hugo_cache/
+/node_modules/
+.hugo_build.lock
 .DS_Store
-*.swp
