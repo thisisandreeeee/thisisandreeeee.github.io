@@ -11,17 +11,41 @@ disableKinds = ["taxonomy", "term"]
   author = "Andre Tan"
   description = "Data scientist working at the intersection of machine learning, software engineering, and economics."
   favicon = "favicon.svg"
-  customCSS = ["css/custom.css"]
+  customCSS = ["css/custom.css", "css/work.css"]
   themeStyle = "auto"
   showMenu = true
   showRSSButton = false
   fadeIn = true
   footerText = "© Andre Tan"
-
   [params.home]
     introHeight = "fullheight"
     localTime = false
     portraitAlt = "Portrait of Andre Tan"
+
+[[menus.main]]
+  name = "Home"
+  url = "/"
+  weight = 10
+
+[[menus.main]]
+  name = "About"
+  url = "/#about"
+  weight = 20
+
+[[menus.main]]
+  name = "Showcase"
+  url = "/#showcase"
+  weight = 30
+
+[[menus.main]]
+  name = "Archive"
+  url = "/archive/"
+  weight = 40
+
+[[menus.main]]
+  name = "Contact"
+  url = "/#contact"
+  weight = 50
 
   [[params.social]]
     url = "https://drive.google.com/file/d/1aIQzLV9QAXNxKWZ58G13cDXesGFpwSGZ/view?usp=sharing"

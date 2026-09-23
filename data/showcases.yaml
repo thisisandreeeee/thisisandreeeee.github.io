@@ -1,0 +1,51 @@
+- title: Simple LLM
+  type: Project
+  date: "2026-08-08"
+  summary: An experiment in post-training Qwen3.5-4B to write clear, correct technical answers in simple English.
+  links:
+    - label: GitHub repository
+      url: https://github.com/thisisandreeeee/simple-llm
+    - label: SFT article
+      url: https://medium.com/data-science-collective/get-llms-to-say-more-with-less-41636ce31268
+    - label: GRPO article
+      url: https://medium.com/towards-artificial-intelligence/making-llms-simpler-from-sft-to-grpo-2a48058f920b
+    - label: HuggingFace artifacts
+      url: https://huggingface.co/thisisandreeeee
+
+- title: Jev Benchmarks
+  type: Project
+  date: "2026-09-19"
+  summary: Reproducible comparisons of Jev against supervised and zero-shot baselines across five NLP benchmarks.
+  links:
+    - label: GitHub repository
+      url: https://github.com/thisisandreeeee/jev-benchmarks
+    - label: Read the article
+      url: https://medium.com/data-science-collective/how-close-does-jev-get-to-task-specific-models-ab56905a4e21
+
+- title: Learning Resources
+  type: Collection
+  summary: Practical resources for learning AI, language models, and data science from first principles.
+  links:
+    - label: Personal AI Wiki
+      url: https://github.com/thisisandreeeee/ai-wiki
+    - label: LLM Koans
+      url: https://github.com/thisisandreeeee/llm-koans
+    - label: LLMs in 10 Words
+      url: https://github.com/thisisandreeeee/llms-in-10-words
+    - label: Data Science Reading List
+      url: https://github.com/thisisandreeeee/unicorn-data-science
+
+- title: Side Quests
+  type: Collection
+  summary: Small experiments and useful automations built to explore an idea or solve an immediate problem.
+  links:
+    - label: Self-Hosted Hermes
+      url: https://medium.com/@andrewrites/what-i-learned-from-running-hermes-for-11-weeks-ea1afa3244d1
+    - label: Sokoban Solver
+      url: https://github.com/thisisandreeeee/sokoban-solver
+    - label: SQL Agent
+      url: https://github.com/thisisandreeeee/sql-agent
+    - label: Dev Environment
+      url: https://github.com/thisisandreeeee/breeze
+    - label: DMV Stalker
+      url: https://github.com/thisisandreeeee/dmv-stalker
