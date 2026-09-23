@@ -21,10 +21,16 @@ disableKinds = ["taxonomy", "term"]
 
   [[params.social]]
     url = "https://drive.google.com/file/d/1aIQzLV9QAXNxKWZ58G13cDXesGFpwSGZ/view?usp=sharing"
-    icon = "download"
+    icon = "file-alt"
     icon_pack = "fas"
     label = "Resume"
     html_attributes = "target=\"_blank\" rel=\"noopener noreferrer\""
+
+  [[params.social]]
+    url = "mailto:tanandre93@gmail.com"
+    icon = "envelope"
+    icon_pack = "fas"
+    label = "Email"
 
   [[params.social]]
     url = "https://www.linkedin.com/in/andre-tan"
