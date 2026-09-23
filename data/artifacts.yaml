@@ -133,7 +133,7 @@
   url: https://medium.com/nus-silicon-valley/what-hackathons-can-teach-us-about-running-a-startup-1fb9b4dad69a
 
 - id: breeze
-  title: Breeze
+  title: Dev Environment
   type: Project
   date: "2016-11-15"
   summary: A reproducible setup for carrying a personal development environment across Linux and macOS.
