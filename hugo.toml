@@ -8,7 +8,10 @@ disableKinds = ["taxonomy", "term"]
   home = ["HTML"]
 
 [params]
+  author = "Andre Tan"
   description = "Data scientist working at the intersection of machine learning, software engineering, and economics."
+  favicon = "favicon.svg"
+  customCSS = ["css/custom.css"]
   themeStyle = "auto"
   showMenu = true
   showRSSButton = false
@@ -18,6 +21,7 @@ disableKinds = ["taxonomy", "term"]
   [params.home]
     introHeight = "fullheight"
     localTime = false
+    portraitAlt = "Portrait of Andre Tan"
 
   [[params.social]]
     url = "https://drive.google.com/file/d/1aIQzLV9QAXNxKWZ58G13cDXesGFpwSGZ/view?usp=sharing"

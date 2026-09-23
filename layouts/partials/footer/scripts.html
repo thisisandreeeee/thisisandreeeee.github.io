@@ -1,0 +1,7 @@
+{{ $script := resources.Get "js/index.js" | minify | fingerprint }}
+<script src="{{ $script.RelPermalink }}" integrity="{{ $script.Data.Integrity }}"></script>
+
+{{ range .Site.Params.customJS }}
+  {{ $custom := resources.Get . | minify | fingerprint }}
+  <script src="{{ $custom.RelPermalink }}" integrity="{{ $custom.Data.Integrity }}"></script>
+{{ end }}

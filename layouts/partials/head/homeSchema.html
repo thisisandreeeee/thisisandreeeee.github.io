@@ -1,0 +1,13 @@
+{{- $sameAs := slice -}}
+{{- range .Site.Params.social -}}
+  {{- if and (hasPrefix .url "https://") (ne .label "Resume") -}}{{- $sameAs = $sameAs | append .url -}}{{- end -}}
+{{- end -}}
+{{- $schema := dict
+  "@context" "https://schema.org"
+  "@type" "Person"
+  "name" .Site.Params.author
+  "url" .Permalink
+  "description" .Site.Params.description
+  "sameAs" $sameAs
+-}}
+<script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>

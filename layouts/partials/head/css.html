@@ -1,0 +1,14 @@
+{{ $bundleRaw := resources.Get "sass/style.sass" | resources.ExecuteAsTemplate "css/main.tmp.css" . }}
+
+{{ if hugo.IsServer }}
+  {{ $bundle := $bundleRaw | css.Sass (dict "targetPath" "css/main.css" "enableSourceMap" true) }}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}" media="screen">
+{{ else }}
+  {{ $bundle := $bundleRaw | css.Sass (dict "targetPath" "css/main.css") | css.PostCSS (dict "use" "autoprefixer") | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}" integrity="{{ $bundle.Data.Integrity }}" crossorigin="anonymous" media="screen">
+{{ end }}
+
+{{ range .Site.Params.customCSS }}
+  {{ $style := resources.Get . | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}" crossorigin="anonymous" media="screen">
+{{ end }}

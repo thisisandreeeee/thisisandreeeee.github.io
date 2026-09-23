@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Locale }}">
+  <head>
+    {{ partial "head/metadata.html" . }}
+    {{ if .Site.Params.plausible }}{{ partial "head/plausible.html" . }}{{ end }}
+    {{ partial "head/openGraph.html" . }}
+    {{ partial "head/homeSchema.html" . }}
+    {{ partial "head/favicons.html" . }}
+    {{ partial "head/css.html" . }}
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <header id="top" class="hero is-{{ .Site.Params.home.introHeight | default "fullheight" }}">
+      <div class="hero-head"></div>
+      {{ with .Site.GetPage "/home" }}
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="bold-title {{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in one{{ end }}">{{ .Title | markdownify }}</h1>
+          <div class="subtitle is-3 {{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in two{{ end }}">{{ .Content }}</div>
+          <div class="{{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in three{{ end }}">{{ partial "home/social.html" . }}</div>
+        </div>
+      </div>
+      {{ end }}
+      <div class="hero-foot {{ if or (.Site.Params.fadeIn | default true) .Site.Params.fadeInIndex }}fade-in three{{ end }}">{{ partial "nav.html" . }}</div>
+    </header>
+
+    <main id="main-content">
+      {{ with .Site.GetPage "/home" }}
+      {{ $home := . }}
+      {{ $pages := where (.Resources.ByType "page") "Draft" false }}
+      {{ range sort $pages "Params.weight" }}
+      {{ if and (ne .Name "contact.md") .File }}
+      <section class="section" id="{{ .File.TranslationBaseName }}">
+        <div class="container">
+          <h2 class="title is-2 has-text-centered">{{ .Title | markdownify }}</h2>
+          {{ if .Params.Image }}
+          <div class="columns">
+            <div class="column is-one-third has-text-centered">
+              {{ with $home.Resources.GetMatch .Params.Image }}
+              {{ with .Fill "640x640 Center webp q82" }}
+              <img class="img-responsive avatar" src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" alt="{{ $home.Site.Params.home.portraitAlt }}" loading="lazy" decoding="async">
+              {{ end }}
+              {{ end }}
+            </div>
+            <div class="markdown column">{{ .Content }}</div>
+          </div>
+          {{ else }}
+          <div class="markdown has-text-centered">{{ .Content }}</div>
+          {{ end }}
+        </div>
+        {{ partial "top-icon.html" . }}
+      </section>
+      <div class="container"><hr></div>
+      {{ end }}
+      {{ end }}
+
+      {{ with .Resources.GetMatch "contact.md" }}
+      {{ if not .Draft }}
+      <section class="section" id="{{ .File.TranslationBaseName }}">
+        <div class="container has-text-centered">
+          <h2 class="title is-2">{{ .Title | markdownify }}</h2>
+          <div class="markdown">{{ .Content }}</div>
+          {{ partial "home/social.html" . }}
+        </div>
+        {{ partial "top-icon.html" . }}
+      </section>
+      <div class="container"><hr></div>
+      {{ end }}
+      {{ end }}
+      {{ end }}
+    </main>
+
+    {{ partial "footer/text.html" . }}
+    {{ partial "footer/scripts.html" . }}
+  </body>
+</html>
