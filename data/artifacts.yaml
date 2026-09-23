@@ -75,7 +75,7 @@
       url: https://medium.com/data-science-collective/get-llms-to-say-more-with-less-41636ce31268
     - label: Read the GRPO article
       url: https://medium.com/towards-artificial-intelligence/making-llms-simpler-from-sft-to-grpo-2a48058f920b
-    - label: Models and dataset
+    - label: HuggingFace artifacts
       url: https://huggingface.co/thisisandreeeee
 
 - id: llm-koans
@@ -86,7 +86,7 @@
   url: https://github.com/thisisandreeeee/llm-koans
 
 - id: ai-wiki
-  title: AI Wiki
+  title: Personal AI Wiki
   type: Project
   date: "2026-06-21"
   summary: A growing, linked knowledge base built from AI newsletters and personal research.
@@ -98,7 +98,7 @@
       url: https://medium.com/@andrewrites/what-i-learned-from-running-hermes-for-11-weeks-ea1afa3244d1
 
 - id: unicorn-data-science
-  title: Unicorn Data Science
+  title: Data Science Reading List
   type: Project
   date: "2020-01-28"
   summary: The practical data-science reading list I wish I had from day one.
