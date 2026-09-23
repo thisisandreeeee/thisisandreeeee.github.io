@@ -1,0 +1,17 @@
+<div class="work-grid">
+  {{ range hugo.Data.showcases }}
+  {{ $showcase := . }}
+  <article class="work-card">
+    <p class="work-meta">
+      <span class="work-type">{{ .type }}</span>
+      {{ with .date }}<time datetime="{{ . }}">{{ time.Format "2 Jan 2006" (time.AsTime .) }}</time>{{ end }}
+    </p>
+    <h3>{{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $showcase.title }}</a>{{ else }}{{ $showcase.title }}{{ end }}</h3>
+    <p>{{ .summary }}</p>
+    <p class="work-links">
+      {{ range .links }}<a href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>{{ end }}
+    </p>
+  </article>
+  {{ end }}
+</div>
+<p class="work-all"><a href="{{ "archive/" | relURL }}">View archive &rarr;</a></p>
