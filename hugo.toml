@@ -1,5 +1,5 @@
 baseURL = "https://thisisandreeeee.github.io/"
-title = "Andre Tan"
+title = "Andre Tan — Welcome To My World"
 theme = "introduction"
 enableRobotsTXT = true
 disableKinds = ["taxonomy", "term"]
@@ -9,7 +9,7 @@ disableKinds = ["taxonomy", "term"]
 
 [params]
   author = "Andre Tan"
-  description = "Data scientist working at the intersection of machine learning, software engineering, and economics."
+  description = "A collection of things I’ve built, learned, and found interesting across AI, software, and everything in between."
   favicon = "favicon.svg"
   customCSS = ["css/custom.css", "css/work.css"]
   themeStyle = "auto"
@@ -92,4 +92,3 @@ disableKinds = ["taxonomy", "term"]
     locale = "en-SG"
     contentDir = "content"
     weight = 1
-    title = "Andre Tan"
