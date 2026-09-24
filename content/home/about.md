@@ -6,7 +6,7 @@ weight: 10
 
 I’m a data scientist by training and a problem solver at heart.
 
-Over eight years at GoTo (Indonesia’s #1 tech company), I invented GoFood’s first recommendation engine (Patent SG 10201912472U), built real-time contextual-bandit pricing systems that increased gross take by 15%, and grew a team that doubled monthly ad revenue to $2M USD.
+Over eight years at GoTo (Indonesia’s #1 tech company), I invented GoFood’s first recommendation engine (Patent SG 10201912472U), built real-time contextual-bandit pricing systems that increased gross take by 15%, and grew a data team that doubled monthly ad revenue to $2M USD.
 
 I later led the modernisation of GoFood’s Search and Recommendations stack using vector retrieval, deep ranking and LLM-powered relevance, improving conversion by 13.5% ($15M additional monthly GTV). I also led 50+ data scientists through GoTo’s cloud migration (one of the largest ever in SEA), reducing infrastructure costs by 40%.
 
